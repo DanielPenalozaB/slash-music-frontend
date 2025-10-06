@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:slash_music_frontend/common/widgets/button/basic_app_button.dart';
 import 'package:slash_music_frontend/core/configs/assets/app_images.dart';
 import 'package:slash_music_frontend/core/configs/theme/app_colors.dart';
-import 'package:slash_music_frontend/presentation/auth/pages/signup_or_signin.dart';
+import 'package:slash_music_frontend/ui/signup_or_signin.dart';
 
 class GetStartedPage extends StatelessWidget {
   const GetStartedPage({super.key});

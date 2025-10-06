@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:slash_music_frontend/common/helpers/is_dark_theme.dart';
+import 'package:slash_music_frontend/common/widgets/appbar/app_bar.dart';
 import 'package:slash_music_frontend/common/widgets/button/basic_app_button.dart';
 import 'package:slash_music_frontend/core/configs/assets/app_images.dart';
 import 'package:slash_music_frontend/core/configs/assets/app_vectors.dart';
 import 'package:slash_music_frontend/core/configs/theme/app_colors.dart';
+import 'package:slash_music_frontend/ui/signin.dart';
+import 'package:slash_music_frontend/ui/signup.dart';
 
 class SignupOrSigninPage extends StatelessWidget {
   const SignupOrSigninPage({super.key});
@@ -14,6 +17,7 @@ class SignupOrSigninPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+          const SlashAppbar(),
           Align(
             alignment: Alignment.topRight,
             child: SvgPicture.asset(AppVectors.topPattern),
@@ -59,7 +63,15 @@ class SignupOrSigninPage extends StatelessWidget {
                     children: [
                       Expanded(
                         child: BasicAppButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    const SignupPage(),
+                              ),
+                            );
+                          },
                           label: 'Register',
                         ),
                       ),
@@ -67,14 +79,22 @@ class SignupOrSigninPage extends StatelessWidget {
                       Expanded(
                         flex: 1,
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    const SigninPage(),
+                              ),
+                            );
+                          },
                           style: TextButton.styleFrom(
                             minimumSize: Size.fromHeight(60),
                           ),
                           child: Text(
                             'Sign In',
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 16,
                               fontWeight: FontWeight.bold,
                               color: context.isDarkTheme
                                   ? Colors.white

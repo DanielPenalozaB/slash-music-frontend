@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:slash_music_frontend/core/configs/assets/app_images.dart';
-import 'package:slash_music_frontend/presentation/get_started/pages/get_started.dart';
+import 'package:slash_music_frontend/ui/get_started.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
