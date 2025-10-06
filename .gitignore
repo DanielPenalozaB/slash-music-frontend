@@ -5,27 +5,23 @@
 .flutter-plugins-dependencies
 .pub-cache/
 build/
+# iOS / CocoaPods autogenerado
 ios/Flutter/Flutter.framework
 ios/Flutter/Flutter.podspec
 ios/Pods/
-linux/
-macos/
-windows/
-web/
 
-# Flutter platform-specific generated files
+# Desktop: ignorar SOLO lo generado, no todo el target
 linux/flutter/
 macos/Flutter/
 windows/flutter/
-
 
 # IDEs
 .vscode/
 .idea/
 *.iml
 
-# Otros
+# Otros temporales
 *.log
-*.dll
-*.stamp
 *.lock
+*.stamp
+*.dll
