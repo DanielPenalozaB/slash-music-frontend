@@ -5,6 +5,8 @@ import 'package:slash_music_frontend/common/widgets/button/basic_app_button.dart
 import 'package:slash_music_frontend/core/configs/assets/app_images.dart';
 import 'package:slash_music_frontend/core/configs/assets/app_vectors.dart';
 import 'package:slash_music_frontend/core/configs/theme/app_colors.dart';
+import 'package:slash_music_frontend/presentation/auth/pages/signin_page.dart';
+import 'package:slash_music_frontend/presentation/auth/pages/signup_page.dart';
 
 class SignupOrSigninPage extends StatelessWidget {
   const SignupOrSigninPage({super.key});
@@ -59,7 +61,14 @@ class SignupOrSigninPage extends StatelessWidget {
                     children: [
                       Expanded(
                         child: BasicAppButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const SignupPage(),
+                              ),
+                            );
+                          },
                           label: 'Register',
                         ),
                       ),
@@ -67,7 +76,14 @@ class SignupOrSigninPage extends StatelessWidget {
                       Expanded(
                         flex: 1,
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const SigninPage(),
+                              ),
+                            );
+                          },
                           style: TextButton.styleFrom(
                             minimumSize: Size.fromHeight(60),
                           ),

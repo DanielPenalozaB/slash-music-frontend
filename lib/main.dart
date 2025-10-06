@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:slash_music_frontend/core/configs/theme/app_theme.dart';
 import 'package:slash_music_frontend/presentation/splash/pages/splash.dart';
+import 'package:slash_music_frontend/service_locator.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initializeDependencies();
   runApp(const MyApp());
 }
 
