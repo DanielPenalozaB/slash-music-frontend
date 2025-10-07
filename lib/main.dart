@@ -3,9 +3,10 @@ import 'package:slash_music_frontend/core/configs/theme/app_theme.dart';
 import 'package:slash_music_frontend/ui/splash.dart';
 import 'package:slash_music_frontend/ui/signin.dart';
 import 'package:slash_music_frontend/ui/signup.dart';
-import 'package:slash_music_frontend/ui/home.dart';
+import 'package:slash_music_frontend/ui/home_page.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
