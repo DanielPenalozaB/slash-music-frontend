@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../common/mock/mock_music.dart';
+import '../../mock/mock_music.dart';
 
 class PlaylistCard extends StatelessWidget {
   const PlaylistCard({super.key, required this.playlist, this.onTap});

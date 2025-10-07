@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../common/mock/mock_music.dart';
+import '../../mock/mock_music.dart';
 
 class MiniPlayer extends StatelessWidget {
   const MiniPlayer({super.key, required this.song, this.onTapPlay});

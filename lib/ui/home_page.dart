@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import '../../../common/mock/mock_music.dart';
-import '../widgets/app_bottom_nav.dart';
-import '../widgets/mini_player.dart';
-import '../widgets/playlist_card.dart';
-import '../widgets/section_header.dart';
-import '../widgets/song_card.dart';
+import '../common/mock/mock_music.dart';
+import '../common/widgets/home/app_bottom_nav.dart';
+import '../common/widgets/home/mini_player.dart';
+import '../common/widgets/home/playlist_card.dart';
+import '../common/widgets/home/section_header.dart';
+import '../common/widgets/home/song_card.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+  final String? displayName;
+  const HomePage({this.displayName,super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
